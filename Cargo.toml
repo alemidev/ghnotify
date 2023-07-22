@@ -1,0 +1,14 @@
+[package]
+name = "ghnotify"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+notify-rust = "4.8.0"
+octocrab = "0.28.0"
+open = "5.0.0"
+reqwest = { version = "0.11.18", features = ["json"]}
+serde_json = "1.0.103"
+tokio = { version = "1.29.1", features = ["full"] }  # TODO slim down features
